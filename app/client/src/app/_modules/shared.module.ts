@@ -14,6 +14,7 @@ import { ToastrModule } from 'ngx-toastr';
       positionClass: 'toast-bottom-center'
     })
   ],
+  
   exports: [
     BsDropdownModule,
     ToastrModule
