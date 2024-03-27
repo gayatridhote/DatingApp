@@ -1,5 +1,6 @@
 
 
+using System.ComponentModel;
 using api.entities;
 using Microsoft.EntityFrameworkCore;
 
@@ -11,5 +12,7 @@ namespace api.Data
         {
         }
         public DbSet<AppUser> Users { get; set; }
+
+       
     }
 }
