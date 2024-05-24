@@ -27,7 +27,7 @@
             "styles": [
               "node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/bootswatch/dist/quartz/bootstrap.css",
+              "node_modules/bootswatch/dist/yeti/bootstrap.css",
               "node_modules/font-awesome/css/font-awesome.min.css",
               "node_modules/ngx-toastr/toastr.css",
               "src/styles.css"
@@ -56,12 +56,23 @@
               "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
-              "namedChunks": true
+              "namedChunks": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.development.ts"
+                }
+              ]
             }
           },
           "defaultConfiguration": "production"
         },
         "serve": {
+          "options": {
+            "ssl": true,
+            "sslCert": "./ssl/localhost.pem",
+            "sslKey": "./ssl/localhost-key.pem"
+          },
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {

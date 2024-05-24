@@ -1,4 +1,3 @@
-using System.Reflection.Metadata.Ecma335;
 using api.DTOs;
 using api.entities;
 using api.Interfaces;
@@ -33,7 +32,7 @@ namespace api.Data
             .ProjectTo<MembersDto>(_mapper.ConfigurationProvider)
             .ToListAsync();
         }
-        }
+        
 
         public async Task<AppUser> GetUserByIdAsync(int id)
         {
