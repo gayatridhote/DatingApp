@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\GDHOTE\\Desktop\\dating\\app\\api\\api.csproj": {}
+    "c:\\Users\\GDHOTE\\Desktop\\dating\\app\\api\\api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\GDHOTE\\Desktop\\dating\\app\\api\\api.csproj": {
+    "c:\\Users\\GDHOTE\\Desktop\\dating\\app\\api\\api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\GDHOTE\\Desktop\\dating\\app\\api\\api.csproj",
+        "projectUniqueName": "c:\\Users\\GDHOTE\\Desktop\\dating\\app\\api\\api.csproj",
         "projectName": "api",
-        "projectPath": "C:\\Users\\GDHOTE\\Desktop\\dating\\app\\api\\api.csproj",
+        "projectPath": "c:\\Users\\GDHOTE\\Desktop\\dating\\app\\api\\api.csproj",
         "packagesPath": "C:\\Users\\GDHOTE\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\GDHOTE\\Desktop\\dating\\app\\api\\obj\\",
+        "outputPath": "c:\\Users\\GDHOTE\\Desktop\\dating\\app\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\GDHOTE\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -41,6 +41,10 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[12.0.1, )"
+            },
+            "CloudinaryDotNet": {
+              "target": "Package",
+              "version": "[1.26.2, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
