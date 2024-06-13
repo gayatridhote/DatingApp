@@ -5,6 +5,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { FileUploadModule } from 'ng2-file-upload';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -14,21 +15,25 @@ import { FileUploadModule } from 'ng2-file-upload';
     CommonModule,
     BsDropdownModule.forRoot(),
     TabsModule.forRoot(),
-    ToastrModule.forRoot({
-      positionClass: 'toast-bottom-center'
-    }),
-    NgxSpinnerModule.forRoot({
-      type: 'line-scale-party'
-    }),
-    FileUploadModule
+    // ToastrModule.forRoot({
+    //   positionClass: 'toast-bottom-center'
+    // }),
+    // NgxSpinnerModule.forRoot({
+    //   type: 'line-scale-party'
+    // }),
+    FileUploadModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   
   exports: [
     BsDropdownModule,
     ToastrModule,
     TabsModule,
-    NgxSpinnerModule,
-    FileUploadModule
+    //NgxSpinnerModule,
+    FileUploadModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class SharedModule { }
