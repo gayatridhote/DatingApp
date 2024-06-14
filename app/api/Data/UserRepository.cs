@@ -25,7 +25,7 @@ namespace api.Data
             .ProjectTo<MembersDto>(_mapper.ConfigurationProvider)
             .SingleOrDefaultAsync();
         }
-
+ 
         public async Task<IEnumerable<MembersDto>> GetMembersAsync()
         {
             return await _context.Users

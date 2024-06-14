@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\GDHOTE\\Desktop\\dating\\app\\api\\api.csproj": {}
+    "C:\\Users\\GDHOTE\\Desktop\\dating\\app\\api\\api.csproj": {}
   },
   "projects": {
-    "c:\\Users\\GDHOTE\\Desktop\\dating\\app\\api\\api.csproj": {
+    "C:\\Users\\GDHOTE\\Desktop\\dating\\app\\api\\api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\GDHOTE\\Desktop\\dating\\app\\api\\api.csproj",
+        "projectUniqueName": "C:\\Users\\GDHOTE\\Desktop\\dating\\app\\api\\api.csproj",
         "projectName": "api",
-        "projectPath": "c:\\Users\\GDHOTE\\Desktop\\dating\\app\\api\\api.csproj",
+        "projectPath": "C:\\Users\\GDHOTE\\Desktop\\dating\\app\\api\\api.csproj",
         "packagesPath": "C:\\Users\\GDHOTE\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\GDHOTE\\Desktop\\dating\\app\\api\\obj\\",
+        "outputPath": "C:\\Users\\GDHOTE\\Desktop\\dating\\app\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\GDHOTE\\AppData\\Roaming\\NuGet\\NuGet.Config"
