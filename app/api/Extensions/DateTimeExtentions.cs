@@ -9,5 +9,14 @@ namespace api.Extensions
             if (dob > today.AddYears(-age)) age--;
             return age;
         }  
+        
     }
+
+//     public class DateOnlyToDateTimeConverter : ITypeConverter<DateOnly, DateTime>
+// {
+//     public DateTime Convert(DateOnly source, DateTime destination, ResolutionContext context)
+//     {
+//         return source.ToDateTime(TimeOnly.MinValue); // Convert DateOnly to DateTime
+//     }
+// }
 }

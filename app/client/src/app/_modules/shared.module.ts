@@ -7,6 +7,7 @@ import { NgxSpinnerModule } from 'ngx-spinner';
 import { FileUploadModule } from 'ng2-file-upload';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 
 @NgModule({
   declarations: [],
@@ -22,8 +23,9 @@ import { RouterModule } from '@angular/router';
     }),
     FileUploadModule,
     FormsModule,
+    RouterModule,
     ReactiveFormsModule,
-    RouterModule
+    BsDatepickerModule.forRoot(),
   ],
   
   exports: [
@@ -33,8 +35,8 @@ import { RouterModule } from '@angular/router';
     NgxSpinnerModule,
     FileUploadModule,
     FormsModule,
-    ReactiveFormsModule,
-    RouterModule
+    RouterModule,
+    ReactiveFormsModule
   ]
 })
 export class SharedModule { }
