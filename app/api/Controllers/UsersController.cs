@@ -2,6 +2,7 @@ using System.Security.Claims;
 using api.DTOs;
 using api.entities;
 using api.Extensions;
+using api.Helpers;
 using api.Interfaces;
 using api.Services;
 using AutoMapper;
@@ -28,9 +29,17 @@ namespace api.Controllers
 
                        
         [HttpGet]
-       public async Task<ActionResult<IEnumerable<MembersDto>>>GetUsers()
+       public async Task<ActionResult<PageList<MembersDto>>>GetUsers([FromQuery]UserParams userParams)
         {
-            var users = await _userRepository.GetMembersAsync();
+            var currentUser = await _userRepository.GetUserByUserNameAsync(User.GetUsername());
+            userParams.CurrentUsername = currentUser.UserName;
+
+            if(string.IsNullOrEmpty(userParams.Gender)){
+                userParams.Gender = currentUser.Gender == "male"? "female":"male";
+            }
+            
+            var users = await _userRepository.GetMembersAsync(userParams);
+            Response.AddPaginationHeader(new PaginationHeader(users.CurrentPage,users.PageSize, users.TotalCount,users.TotalPages));
             return Ok(users); 
         }
 

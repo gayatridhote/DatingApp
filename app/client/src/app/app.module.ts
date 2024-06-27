@@ -35,7 +35,6 @@ import { DatePickerComponent } from './_forms/date-picker/date-picker.component'
         HomeComponent,
         RegisterComponent,
         MemberListComponent,
-        MemberDetailsComponent,
         ListsComponent,
         MessagesComponent,
         TestErrorComponent,
@@ -55,7 +54,7 @@ import { DatePickerComponent } from './_forms/date-picker/date-picker.component'
         ReactiveFormsModule,
         SharedModule,
         TextInputComponent,
-        DatePickerComponent
+        DatePickerComponent,
     ],
         
     providers: [
